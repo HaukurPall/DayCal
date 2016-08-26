@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="../bower_components/google-signin/google-signin.html">
+<link rel="import" href="../bower_components/google-calendar/google-calendar.html">
+
+<dom-module id="my-new-view">
+    <!-- Defines the element's style and local DOM -->
+    <template>
+        <style>
+            :host {
+                display: block;
+
+                padding: 16px;
+            }
+        </style>
+        <iframe src="https://calendar.google.com/calendar/embed?src=1kgkninbt9mbbkgn9tr505di6k%40group.calendar.google.com&ctz=Europe/Amsterdam" style="border: 0" width="800" height="600" frameborder="2" scrolling="no"></iframe>
+    </template>
+    <!-- Creates the element's prototype and registers it -->
+    <script>
+        Polymer({
+            is: 'my-new-view'
+        });
+    </script>
+</dom-module>
